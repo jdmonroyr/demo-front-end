@@ -1,0 +1,19 @@
+{
+  "name": "demo-front-end",
+  "version": "1.0.0",
+  "description": "demo of front end technologies",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdmonroyr/demo-front-end.git"
+  },
+  "author": "Juan David Monroy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdmonroyr/demo-front-end/issues"
+  },
+  "homepage": "https://github.com/jdmonroyr/demo-front-end#readme"
+}

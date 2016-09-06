@@ -26,86 +26,386 @@
     <nav class="navbar navbar-fixed-top">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-sm-3 top-left-menu">
+         <!-- top left menu -->    
+          <div class="col-xs-9 col-sm-3 top-left-menu">
             <div class="navbar-header">
               <a class="navbar-brand" href="index.html">
                 <h1>wold_app</h1>
               </a>
-              
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
+                
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#side-menu" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-              </button>
+              </button>    
+                
             </div>
               <a href="#" class="header-home pull-right">
                 <span class="glyphicon glyphicon-equalizer" aria-hidden="true">
                 </span>
               </a>
           </div>
-          <div id="nav-menu" class="collapse navbar-collapse pull-right">
-            <ul class="nav navbar-nav">
+          
+          <!-- nav-header-right -->
+          <div id="nav-menu" class="pull-right">
+            <ul class="nav navbar-nav hidden-xs">
               <li>
-                <a class="nav-item" href="#about">About</a>
+                <a class="nav-item" href="#about">Ayuda</a>
               </li>
             </ul>
-            <!-- Options button dropdown -->
+              
+            <!-- options profile dropdown -->
             <div id="nav-profile" class="btn-group pull-right">
               <button type="button" class="btn btn-link dropdown-toggle thumbnail" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <img src="img/user.jpg" class="img-circle">
               </button>
               <ul class="dropdown-menu">
                 <li><a href="#">Profile</a></li>
-                <li><a href="settings.html">Setting</a></li>
+                <li><a href="settings.html">Settings</a></li>
                 <li role="separator" class="divider"></li>
                 <li><a href="#">Logout</a></li>
               </ul>
             </div>
-          </div>    
-            
-            <!-- <a href="#" class="header-home pull-right">
-                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-                        </a>
-                    </div>
-                    <div id="nav-menu" class="collapse navbar-collapse pull-right">
-            <ul class="nav navbar-nav">
-              <li><h3>test</h3>
+          </div> 
+        </div>
+       </div>
+      </div>
+    </nav>
+    
+    <!-- side menu -->
+    <div class="container-fluid">
+      <div class="row">
+        <div id="side-menu" class="col-xs-9 col-sm-3">
+          
+          <!-- profile block -->
+          <div class="profile-block">
+            <img src="img/user.jpg" class="img-circle">
+            <h4 class="profile-title">default-user  <small>@default-user</small>
+            </h4>
+          </div>
+          
+          <!-- side menu options -->    
+          <ul class="nav nav-pills nav-stacked">
+           <!-- register options -->      
+           <li>
+              <a href="#register-opts" class="transition" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="register-opts">
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true">
+                </span>
+                Registro
+                <span class="glyphicon glyphicon-menu-left pull-right transition" aria-hidden="true"></span>
+              </a>
+              <ul class="collapse list-unstyled" id="register-opts">
+                <li>
+                  <a href="#" class="transition">
+                    Proveedor
+                  </a>
                 </li>
-                        </ul>
-                    </div>
-                    <div class="container-fluid">
-                    <div class="row">
-                        <div id="side-menu" class="col-md-3 hidden-xs">
-                        <div class="profile-block">
-                            <h4 class="profile-title">wold user <small>@wolduser</small></h4>
-                            </div>
-                            <ul class="nav nav-pills nav-stacked">
-                            <li>
-                                <a href="#" class="transition"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Registro</a>
-                                </li>
-                                <li class="nav-divider"></li>
-                                 <li>
-                                <a href="#" class="transition"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Venta</a>
-                                </li>
-                                 <li>
-                                <a href="#" class="transition"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Servicio Técnico</a>
-                                </li>
-                                 <li>
-                                <a href="#" class="transition"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Productos</a>
-                                </li>
-                                <li class="nav-divider"></li>
-                                <li>
-                                <a href="#" class="transition"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Informes</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="main" class="col-md-9"></div>-->
-                    </div>
-                    </div>
+                <li>
+                  <a href="#" class="transition">
+                    Vendedor
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="transition">
+                    Clientes
+                  </a>
+                </li>
+              </ul>
+          </li>
+          <li class="nav-divider"></li>
+          <!-- sale options -->
+          <li>
+            <a href="#sale-opts" class="transition" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="sale-opts">
+              <span class="glyphicon glyphicon-usd" aria-hidden="true">
+              </span>
+              Ventas
+              <span class="glyphicon glyphicon-menu-left pull-right transition" aria-hidden="true"></span>
+            </a>
+            <ul class="collapse list-unstyled" id="sale-opts">
+              <li>
+                <a href="#" class="transition">
+                  Registrar/Ver 
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- tech support options -->      
+          <li>
+            <a href="#tech-support-opts" class="transition" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="tech-support-opts">
+              <span class="glyphicon glyphicon-wrench" aria-hidden="true">
+              </span>
+                Serv. Tecnico
+              <span class="glyphicon glyphicon-menu-left pull-right transition" aria-hidden="true"></span>
+            </a>
+            <ul class="collapse list-unstyled" id="tech-support-opts">
+              <li>
+                <a href="#" class="transition">
+                  Registrar/Ver 
+                </a>
+              </li>
+              <li>
+                <a href="#" class="transition">
+                  Entregados
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- products options -->      
+          <li>
+            <a href="#products-opts" class="transition" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="products-opts">
+              <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                Productos
+              <span class="glyphicon glyphicon-menu-left pull-right transition" aria-hidden="true"></span>
+            </a>
+            <ul class="collapse list-unstyled" id="products-opts">
+              <li>
+                <a href="#" class="transition">
+                  Registrar/Ver 
+                </a>
+              </li>
+              <li>
+                <a href="#" class="transition">
+                  Compras
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- reports options -->      
+          <li class="nav-divider"></li>
+          <li>
+            <a href="#reports-opts" class="transition" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="reports-opts">
+              <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>
+                Informes
+                <span class="glyphicon glyphicon-menu-left pull-right transition" aria-hidden="true"></span>
+            </a>
+            <ul class="collapse list-unstyled" id="reports-opts">
+              <li>
+                <a href="#" class="transition">
+                  Compras
+                </a>
+              </li>
+              <li>
+                <a href="#" class="transition">
+                  Ventas
+                </a>
+              </li>
+              <li>
+                <a href="#" class="transition">
+                  Devoluciones
+                </a>
+              </li>
+              <li>
+                <a href="#" class="transition">
+                  Contabilidad
+                </a>
+              </li>
+              <li>
+                <a href="#" class="transition">
+                  Existencias
+                </a>
+              </li>
+              <li>
+                <a href="#" class="transition">
+                  Servicio Técnico
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+          
+     <div id="main" class="col-sm-offset-3 col-sm-9">
+          <div class="card col-lg-3 col-xs-9">
+            <div class="card-block">
+              <h3>Registrar Proveedor</h3>
+              <form class="form-horizontal">
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="contact-name">Ident.:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="contact-name" placeholder="Nit o CC">
+              </div>
             </div>
-        </nav>
-    <script src="js/jquery-3.1.0.js"></script>
-    <script src="js/bootstrap.js"></script>
-    </body>
+             <div class="form-group">
+              <label class="col-sm-2 control-label" for="contact-email">Nombre:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="contact-email" placeholder="nombre del proveedor">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="contact-email">Telefóno:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="contact-email" placeholder="telefóno del proveedor">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="contact-email">Contacto:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="contact-email" placeholder="nombre de contacto">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="contact-email">E-mail:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="contact-email" placeholder="correo electrónico de contacto">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="contact-email">Teléfono:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="contact-email" placeholder="teléfono de contacto">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="contact-email">Dirección:</label>
+              <div class="col-sm-10">
+                <input class="form-control" type="text" id="contact-email" placeholder="dirección de contacto">
+              </div>
+            </div>     
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-success btn-lg form-btn" type="submit">Submit</button>
+                <button class="btn btn-error btn-lg form-btn" type="submit">Cancel</button>
+              </div>
+            </div>
+          </form>
+            </div>
+          </div>
+         
+         <div class="card col-lg-6 col-xs-9">
+            <div class="card-block">
+              <h3>Listado de Proveedores</h3>
+            <div class="center-block">
+            <table class="table table-striped table-hover">
+              <thead>
+                <tr>
+                  <th class="success">
+                    <h4 class="text-center white-text">Ident.</h4>
+                  </th>
+                  <th class="info">
+                    <h4 class="text-center white-text">Nombre </h4>
+                  </th>
+                  <th class="success">
+                    <h4 class="text-center white-text">Teléfono</h4>
+                  </th>
+                  <th class="info">
+                    <h4 class="text-center white-text">Contacto</h4>
+                  </th>
+                <th class="success">
+                    <h4 class="text-center white-text">E-mail</h4>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                   <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td>Dolor sit amet</td>
+                  <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                   <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>Dolor sit amet</td>
+                  <td>Lorem ipsum</td>
+                   <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                    <td>Lorem ipsum</td>
+                     <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                    <td>Lorem ipsum</td>
+                     <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                    <td>Lorem ipsum</td>
+                     <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                    <td>Lorem ipsum</td>
+                     <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                    <td>Lorem ipsum</td>
+                     <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>-</td>
+                    <td>Lorem ipsum</td>
+                     <td>Lorem ipsum</td>
+                  <td>Lorem ipsum</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+            </div>
+          </div>
+         
+<div class="card col-xs-9">
+    <div class="card-block footer">     
+        <div class="col-sm-3">
+          <h5>Nuestra Empresa</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">General</a></li>
+            <li><a href="#">Historia</a></li>
+            <li><a href="#">Soporte técnico</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h5>Redes Sociales</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+         <div class="col-sm-3">
+          <address>
+            <h5>Wold Comunicaciones</h5>
+            Dirección Principal<br />
+            Dirección Secundaria<br />
+            <abbr title="Telefóno">T:</abbr> (+57) 885-0000
+          </address>
+        </div>
+    </div>
+         </div>
+
+  </div>
+</div>
+                    
+<script src="js/jquery-3.1.0.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
 </html>
